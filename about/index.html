@@ -146,163 +146,122 @@
             <div class="main-content">
 
                 
-                    $friend-link-item-height = 82px
-$friend-link-item-height-tablet = 68px
-$friend-link-item-interval = 16px
-$friend-link-item-border-radius = 6px
+                    
+<div class="fade-in-down-animation">
+    <div class="page-template-container">
+        
+        
+        <div class="page-template-content keep-markdown-body">
+            
+                <h2 id="About-me-关于我"><a href="#About-me-关于我" class="headerlink" title="About me | 关于我"></a>About me | 关于我</h2><blockquote>
+<ul>
+<li><em>Thirsty music Drunker</em> 🎧</li>
+<li><em>Unweary movie Explorer</em> 🎬</li>
+<li><em>Religious book Believer</em> 📖  </li>
+<li><em>Delirious vinyl Collector</em> 💿</li>
+</ul>
+</blockquote>
+<hr>
+<h3 id="2023-x2F-01-x2F-10"><a href="#2023-x2F-01-x2F-10" class="headerlink" title="2023&#x2F;01&#x2F;10"></a>2023&#x2F;01&#x2F;10</h3><p>忙了几个日夜，博客终于初具雏形，新年的第一个愿望已经达成，心满意足</p>
+<p>建立自己的博客是一件很酷的事情，坚持<strong>少即是多，简约至美</strong>的理念，我将不定期更新主页内容。有这样一件美差时刻督促我创作，也算可以除除惰性</p>
+<p>现代人终究太浮躁，博客终究是自己的</p>
+<p>感谢所有耐心看完文章的朋友</p>
+<p>一方不被打扰的净土，</p>
+<p>虚拟而永恒。</p>
+<hr>
+<h3 id="Tips-指南"><a href="#Tips-指南" class="headerlink" title="Tips | 指南"></a>Tips | 指南</h3><ul>
+<li>支持订阅 Rss</li>
+<li>页面友好，全年龄使用</li>
+<li>解锁完整功能请科学上网</li>
+<li>更佳阅读体验请使用电脑端浏览</li>
+<li>使用 Waline，登陆解锁评论功能~可直接昵称输入 QQ 号评论</li>
+</ul>
+<h3 id="Community-社群"><a href="#Community-社群" class="headerlink" title="Community | 社群"></a>Community | 社群</h3><p>分享交流学习，喜欢书影音的朋友欢迎来玩🎄</p>
 
-.page-template-container {
+            
+        </div>
+        
+            <div class="page-template-comments">
+                
+<div class="comments-container">
+    <div id="comments-anchor"></div>
+    <div class="comment-area-title">
+        <i class="fas fa-comments"></i>&nbsp;Comments
+    </div>
+    
+        
+            
 
-  keep-container(false, 0, 0, 2rem, 2rem)
+    <div class="valine-container">
+        <script data-pjax src="//cdn.jsdelivr.net/npm/valine@latest/dist/Valine.min.js"></script>
+        <div id="vcomments"></div>
+        <script data-pjax>
+          function loadValine() {
+            new Valine({
+              el: '#vcomments',
+              appId: 'ZEuRq8nSsIBhyiFMVzjpE2p0-MdYXbMMI',
+              appKey: 'HCenMPQQs9cvO8AdRWgUtTHl',
+              meta: ['nick', 'mail', 'link'],
+              avatar: 'wavatar',
+              enableQQ: true,
+              placeholder: 'Tequila 表示很高兴认识你',
+              lang: 'en'.toLowerCase()
+            });
 
-  .page-template-content {
-    color var(--text-color-3)
-
-    h1
-    h2
-    h3
-    h4
-    h5
-    h6 {
-
-      &:first-child {
-        margin-top 0
-      }
-    }
-  }
-
-
-  if (hexo-config('menu.Links')) {
-    .friends-link-container {
-
-      .friends-link-list {
-        position relative
-
-        .friends-link-item {
-          position relative
-          float left
-          box-sizing border-box
-          width 50%
-          height $friend-link-item-height
-          padding-bottom $friend-link-item-interval
-          cursor pointer
-
-          +keep-tablet() {
-            height $friend-link-item-height-tablet
-          }
-
-          &:nth-child(odd) {
-            padding-right $friend-link-item-interval * 0.5
-          }
-
-          &:nth-child(even) {
-            padding-left $friend-link-item-interval * 0.5
-          }
-
-          .content {
-            position relative
-            box-sizing border-box
-            width 100%
-            height 100%
-            padding-left $friend-link-item-height - $friend-link-item-interval
-            border-radius $friend-link-item-border-radius
-            box-shadow 1px 1px 2px var(--shadow-color)
-
-
-            +keep-tablet() {
-              padding-left $friend-link-item-height-tablet - $friend-link-item-interval
-            }
-
-            &:hover {
-              box-shadow 1px 1px 6px var(--shadow-color)
-
-              .info .name {
-                color var(--primary-color)
+            function getAuthor(language) {
+              switch (language) {
+                case 'en':
+                  return 'Author';
+                case 'zh-CN':
+                  return '博主';
+                default:
+                  return 'Master';
               }
             }
 
-            .radius {
-              border-top-left-radius $friend-link-item-border-radius
-              border-bottom-left-radius $friend-link-item-border-radius
-            }
+            // Add "Author" identify
+            const getValineDomTimer = setInterval(() => {
+              const vcards = document.querySelectorAll('#vcomments .vcards .vcard');
+              if (vcards.length > 0) {
+                let author = 'Don Tequila';
 
-            .avatar {
-              position absolute
-              top 0
-              left 0
-              display flex
-              align-items center
-              justify-content center
-              width $friend-link-item-height  - $friend-link-item-interval
-              height 100%
-              color var(--text-color-2)
-              font-size 2rem
-              background var(--background-color-2)
-
-
-              +keep-tablet() {
-                width $friend-link-item-height-tablet  - $friend-link-item-interval
-              }
-
-              img {
-                position relative
-                box-sizing border-box
-                width 100%
-                height 100%
-              }
-            }
-
-
-            .info {
-              position relative
-              display flex
-              flex-direction column
-              align-items center
-              justify-items flex-start
-              box-sizing border-box
-              width 100%
-              height 100%
-              padding 10px
-
-              +keep-tablet() {
-                padding 6px
-              }
-
-              .name {
-                width 100%
-                height 60%
-                color var(--text-color-2)
-                font-size 1.28rem
-
-                +keep-tablet() {
-                  font-size 1.08rem
+                if (author) {
+                  for (let vcard of vcards) {
+                    const vnick_dom = vcard.querySelector('.vhead .vnick');
+                    const vnick = vnick_dom.innerHTML;
+                    if (vnick === author) {
+                      vnick_dom.innerHTML = `${vnick} <span class="author">${getAuthor(KEEP.hexo_config.language)}</span>`
+                    }
+                  }
                 }
+                clearInterval(getValineDomTimer);
+              } else {
+                clearInterval(getValineDomTimer);
               }
-
-              .description {
-                width 100%
-                height 40%
-                color var(--text-color-4)
-                font-size 1rem
-
-
-                +keep-tablet() {
-                  font-size 0.98rem
-                }
-              }
-
-              .ellipsis {
-                overflow hidden
-                white-space nowrap
-                text-overflow ellipsis
-              }
-            }
+            }, 2000);
           }
-        }
-      }
-    }
-  }
-}
+
+          if ('true' === 'true') {
+            const loadValineTimeout = setTimeout(() => {
+              loadValine();
+              clearTimeout(loadValineTimeout);
+            }, 1000);
+          } else {
+            window.addEventListener('DOMContentLoaded', loadValine);
+          }
+        </script>
+    </div>
+
+
+
+        
+    
+</div>
+
+            </div>
+        
+    </div>
+</div>
 
 
                 
