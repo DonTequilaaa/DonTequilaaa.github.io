@@ -5,7 +5,7 @@
     --base-font-size: 17px;
  
     /* 修改全局默认字体样式 */
-    --base-font-family: Rockwell;
+    --base-font-family: Rockwell,STZhongsong;
  
     /* 设置模块卡片的边框圆角 */
     --box-border-radius: 10px;
