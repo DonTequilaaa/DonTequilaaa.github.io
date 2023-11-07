@@ -17,7 +17,7 @@ if (!window.runningTime) {
         }
 
         setInterval(() => {
-            tempDiv.innerHTML = 'This Tavern Has Been Open For ' + formatTimestamp(new Date(since).getTime())
+            tempDiv.innerHTML = 'Has Been Opening For ' + formatTimestamp(new Date(since).getTime())
         }, 1000)
     }
 }
