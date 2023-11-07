@@ -23,7 +23,7 @@
     --first-screen-font-color-light: #E5FF2F;
  
     /* 设置首屏的文字颜色（暗色） */
-    /*--first-screen-font-color-dark: rgba(135, 206, 235, 0.90);
+    --first-screen-font-color-dark: rgb(0, 255, 130);
  
     /* 设置首页文章模块鼠标悬浮时的缩放级别 */
     --home-post-hover-scale: 1.05;
