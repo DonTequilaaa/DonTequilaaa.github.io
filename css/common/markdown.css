@@ -231,3 +231,7 @@ keep-mobile()
 .keep-markdown-body > table tr:nth-child(2n) {
   background-color: var(--background-color-2);
 }
+.keep-markdown-body .mermaid {
+  background: #f5f5f5 !important;
+  border-radius: 0.3rem;
+}

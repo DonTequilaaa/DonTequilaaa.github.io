@@ -3,7 +3,6 @@
 }
 .home-content-container .home-article-list .home-article-item {
   position: relative;
-  overflow: hidden;
 }
 .home-content-container .home-article-list .home-article-item .post-sticky-box {
   position: absolute;
@@ -33,6 +32,8 @@ keep-mobile()
   width: 100%;
   overflow: hidden;
   background-color: var(--background-color-2);
+  border-top-left-radius: var(--box-border-radius);
+  border-top-right-radius: var(--box-border-radius);
 keep-tablet()
 keep-mobile()
 }
