@@ -205,30 +205,40 @@ keep-tablet()
 .keep-markdown-body img[lazyload] {
   margin: 0.8rem auto 0.2rem;
 }
-.keep-markdown-body > table {
+.keep-markdown-body > .table-container {
+  box-sizing: border-box;
   width: 100%;
+  margin: 1.5rem 0;
   overflow: auto;
+}
+.keep-markdown-body > .table-container table {
+  box-sizing: border-box;
+  width: 100%;
   border-collapse: collapse;
   border-spacing: 0;
 keep-mobile()
 }
-.keep-markdown-body > table td,
-.keep-markdown-body > table th {
+.keep-markdown-body > .table-container table td,
+.keep-markdown-body > .table-container table th {
   padding: 0;
 }
-.keep-markdown-body > table th {
+.keep-markdown-body > .table-container table td {
+  color: var(--text-color-3);
+}
+.keep-markdown-body > .table-container table th {
+  color: var(--text-color-2);
   font-weight: 600;
 }
-.keep-markdown-body > table td,
-.keep-markdown-body > table th {
-  padding: 0.4rem 1rem;
+.keep-markdown-body > .table-container table td,
+.keep-markdown-body > .table-container table th {
+  padding: 0.5rem 1rem;
   border: 0.1rem solid var(--border-color);
 }
-.keep-markdown-body > table tr {
+.keep-markdown-body > .table-container table tr {
   background-color: var(--background-color-1);
-  border: 0.1rem solid var(--text-color-6);
+  border: 0.1rem solid var(--border-color);
 }
-.keep-markdown-body > table tr:nth-child(2n) {
+.keep-markdown-body > .table-container table tr:nth-child(2n) {
   background-color: var(--background-color-2);
 }
 .keep-markdown-body .mermaid {

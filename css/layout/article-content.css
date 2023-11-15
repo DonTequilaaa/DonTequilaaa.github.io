@@ -44,6 +44,7 @@ keep-mobile()
   line-height: 1.6;
   background: var(--background-color-1-transparent);
   border-top-right-radius: var(--box-border-radius);
+  -webkit-backdrop-filter: blur(2px);
   backdrop-filter: blur(2px);
 }
 .post-page-container .article-content-container .article-content-top .post-cover {
@@ -109,7 +110,7 @@ keep-mobile()
 .post-page-container .article-content-container .article-content-bottom .article-header .info-box .author .name {
   color: var(--text-color-3);
 }
-.post-page-container .article-content-container .article-content-bottom .article-header .info-box .author .author-label {
+.post-page-container .article-content-container .article-content-bottom .article-header .info-box .author .author-badge {
   margin-left: 0.8rem;
   padding: 0 0.4rem;
   color: #fff;

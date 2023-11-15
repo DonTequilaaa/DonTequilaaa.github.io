@@ -1,6 +1,37 @@
 .home-content-container {
   background: var(--background-color-1);
 }
+.home-content-container .website-announcement {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -0.6rem;
+keep-tablet()
+keep-mobile()
+}
+.home-content-container .website-announcement .announcement {
+  width: 100%;
+  padding: 0 0.4rem;
+  color: var(--text-color-3);
+}
+.home-content-container .website-announcement .icon {
+  flex-shrink: 0;
+  padding: 0.2rem;
+  font-size: 1.2rem;
+}
+.home-content-container .website-announcement .icon.left {
+  color: var(--keep-danger-color);
+  font-size: 1.5rem;
+  transform-origin: left bottom;
+  animation: shake 1s ease infinite;
+}
+.home-content-container .website-announcement .icon.right {
+  color: var(--text-color-4);
+  cursor: pointer;
+}
+.home-content-container .website-announcement .icon.right:hover {
+  color: var(--text-color-3);
+}
 .home-content-container .home-article-list .home-article-item {
   position: relative;
 }
