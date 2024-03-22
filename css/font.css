@@ -1,0 +1,8 @@
+/* your-hexo/source/css/font.css */
+
+@font-face {
+    font-family: 'STZhongsong';
+    src: url('../font/chinese.stzhongs.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+ }
