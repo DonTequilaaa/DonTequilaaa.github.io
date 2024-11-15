@@ -3548,7 +3548,7 @@ figure.highlight .shrink-line:hover::before {
   width: 100%;
   height: 100vh;
   overflow: hidden;
-  background-image: url("https://cdn.jsdelivr.net/gh/DonTequilaaa/picx-images-hosting@master/myblog/twins.6i137o52aw80.webp");
+  background-image: url("https://github.com/DonTequilaaa/picx-images-hosting/raw/master/myblog/twins.6i137o52aw80.webp");
   background-position-x: center;
   background-position-y: center;
   background-size: cover;
@@ -3556,7 +3556,7 @@ figure.highlight .shrink-line:hover::before {
   background-repeat-y: no-repeat;
 }
 .dark-mode .first-screen-container {
-  background-image: url("https://cdn.jsdelivr.net/gh/DonTequilaaa/picx-images-hosting@master/myblog/twins.6i137o52aw80.webp");
+  background-image: url("https://github.com/DonTequilaaa/picx-images-hosting/raw/master/myblog/twins.6i137o52aw80.webp");
 }
 .first-screen-container .first-screen-content {
   display: flex;
